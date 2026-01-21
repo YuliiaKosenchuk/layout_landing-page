@@ -1,3 +1,15 @@
+@use 'base/normalize';
+@use 'base/variables' as *;
+@use 'layout/header';
+@use 'layout/aside';
+@use 'section/top-bar';
+@use 'components/icon';
+
+
 body {
   margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: $color-primary;
 }

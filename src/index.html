@@ -6,7 +6,44 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>NOTHING</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../src/assets/icons/apple-touch-icon-60x60.png"
+    />
     <link
       rel="stylesheet"
       href="./styles/main.scss"
@@ -17,6 +54,92 @@
     ></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a
+              href="#"
+              class="top-bar__logo-link"
+            >
+              <img
+                src="../src/assets/icons/logo.svg"
+                alt="logo nothing"
+                class="top-bar__logo-image"
+              />
+            </a>
+
+            <div class="top-bar__icons">
+              <a
+                href="#"
+                class="icon icon--phone"
+              ></a>
+              <a
+                href="#menu"
+                id="hamburger-icon"
+                class="icon icon--menu"
+              >
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <h1 class="header__title">Bring joy back to the everyday</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <aside class="menu">
+      <div class="menu__header">
+        <span class="menu__logo">NOTHING®</span>
+        <button
+          class="menu__close"
+          aria-label="Close menu"
+        >
+          ✕
+        </button>
+      </div>
+
+      <nav class="menu__nav">
+        <a
+          href="#"
+          class="menu__link menu__link--active"
+        >
+          Products
+        </a>
+        <a
+          href="#"
+          class="menu__link"
+        >
+          Store
+        </a>
+        <a
+          href="#"
+          class="menu__link"
+        >
+          Login
+        </a>
+        <a
+          href="#"
+          class="menu__link"
+        >
+          Cart(0)
+        </a>
+      </nav>
+
+      <div class="menu__footer">
+        <a
+          href="tel:+12345555555"
+          class="menu__phone"
+        >
+          +1 234 5555-55-55
+        </a>
+        <button class="menu__cta">Call to order</button>
+      </div>
+    </aside> -->
   </body>
 </html>
