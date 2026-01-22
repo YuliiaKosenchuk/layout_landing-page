@@ -1,71 +1,84 @@
+@use '../base/variables' as *;
+
 .menu {
   position: fixed;
-  inset: 0;
-  background: #eee;
-  padding: 40px 32px;
+  top: 0;
+  right: -100%;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-}
+  background: $color-primary-bg;
+  transition: right 0.4s ease;
 
-.menu__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu__logo {
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  font-weight: 600;
-}
-
-.menu__close {
-  background: none;
-  border: 0;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.menu__nav {
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.menu__link {
-  font-size: 14px;
-  text-decoration: none;
-  color: #000;
-  width: fit-content;
-  border-bottom: 1px solid transparent;
-
-  &:hover,
-  &--active {
-    border-color: #000;
+  &.active {
+    right: 0;
   }
 }
 
-.menu__footer {
-  margin-top: auto;
+.menu__nav {
+  padding: 32px 0 48px 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.menu__link {
+  position: relative;
+  font-size: 22px;
+  text-decoration: none;
+  color: $color-primary;
+  letter-spacing: 2px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 600ms ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.menu__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 16px;
+  padding-left: 20px;
 }
 
 .menu__phone {
-  font-size: 13px;
+  font-size: 16px;
   text-decoration: none;
-  color: #000;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  color: $color-primary;
 }
 
 .menu__cta {
-  background: none;
-  border: 0;
-  padding: 0;
-  font-size: 12px;
-  letter-spacing: 0.2em;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  text-decoration: underline;
-  cursor: pointer;
+
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: currentColor;
+    bottom: -4px;
+  }
 }

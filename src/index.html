@@ -74,18 +74,16 @@
                 href="#"
                 class="icon icon--phone"
               ></a>
-              <a
-                href="#menu"
-                id="hamburger-icon"
+              <button type="button"
+                id="burger"
                 class="icon icon--menu"
               >
                 <span class="line line-1"></span>
                 <span class="line line-2"></span>
                 <span class="line line-3"></span>
-              </a>
+              </button>
             </div>
           </div>
-
           <div class="header__bottom">
             <h1 class="header__title">Bring joy back to the everyday</h1>
           </div>
@@ -93,16 +91,26 @@
       </div>
     </header>
 
-    <!-- <aside class="menu">
-      <div class="menu__header">
-        <span class="menu__logo">NOTHING®</span>
-        <button
-          class="menu__close"
-          aria-label="Close menu"
-        >
-          ✕
-        </button>
-      </div>
+    <aside class="menu">
+      <div class="top-bar">
+            <a
+              href="#"
+              class="top-bar__logo-link"
+            >
+              <img
+                src="../src/assets/icons/logo.svg"
+                alt="logo nothing"
+                class="top-bar__logo-image"
+              />
+            </a>
+
+            <div class="top-bar__icons">
+              <button type="button"
+
+                class="icon icon--close"
+              ></button>
+            </div>
+          </div>
 
       <nav class="menu__nav">
         <a
@@ -131,15 +139,49 @@
         </a>
       </nav>
 
-      <div class="menu__footer">
+      <div class="menu__contact">
         <a
           href="tel:+12345555555"
           class="menu__phone"
         >
           +1 234 5555-55-55
         </a>
-        <button class="menu__cta">Call to order</button>
+        <button class="menu__cta" type="button">Call to order</button>
       </div>
-    </aside> -->
+    </aside>
+
+    <main class="main">
+      <section class="recommended">
+        <div class="container">
+          <div class="recommended__content">
+            <h2 class="recommended__title">Recommended</h2>
+          </div>
+        </div>
+      </section>
+
+       <section class="category">
+        <div class="container">
+          <div class="category__content">
+            <h2 class="category__title">Browse Nothing products by category</h2>
+          </div>
+        </div>
+      </section>
+
+       <section class="about">
+        <div class="container">
+          <div class="about__content">
+            <h2 class="about__title">About us</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__content">
+            <h2 class="contact__title">Contact us</h2>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
