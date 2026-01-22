@@ -15,3 +15,10 @@
 //     padding: 16px;
 //   }
 // }
+
+@mixin regular-text {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}

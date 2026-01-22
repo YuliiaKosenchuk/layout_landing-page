@@ -32,6 +32,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>NOTHING</title>
     <link
       rel="icon"
@@ -74,7 +87,8 @@
                 href="#"
                 class="icon icon--phone"
               ></a>
-              <button type="button"
+              <button
+                type="button"
                 id="burger"
                 class="icon icon--menu"
               >
@@ -93,24 +107,24 @@
 
     <aside class="menu">
       <div class="top-bar">
-            <a
-              href="#"
-              class="top-bar__logo-link"
-            >
-              <img
-                src="../src/assets/icons/logo.svg"
-                alt="logo nothing"
-                class="top-bar__logo-image"
-              />
-            </a>
+        <a
+          href="#"
+          class="top-bar__logo-link"
+        >
+          <img
+            src="../src/assets/icons/logo.svg"
+            alt="logo nothing"
+            class="top-bar__logo-image"
+          />
+        </a>
 
-            <div class="top-bar__icons">
-              <button type="button"
-
-                class="icon icon--close"
-              ></button>
-            </div>
-          </div>
+        <div class="top-bar__icons">
+          <button
+            type="button"
+            class="icon icon--close"
+          ></button>
+        </div>
+      </div>
 
       <nav class="menu__nav">
         <a
@@ -146,20 +160,65 @@
         >
           +1 234 5555-55-55
         </a>
-        <button class="menu__cta" type="button">Call to order</button>
+        <button
+          class="menu__cta"
+          type="button"
+        >
+          Call to order
+        </button>
       </div>
     </aside>
 
     <main class="main">
       <section class="recommended">
         <div class="container">
+          <h2 class="recommended__title">Recommended</h2>
           <div class="recommended__content">
-            <h2 class="recommended__title">Recommended</h2>
+            <div class="card">
+              <img
+                class="card__img"
+                src="./assets/images/recommended-1.png"
+                alt="phone"
+              />
+              <h3 class="card__title">Phone (1)</h3>
+              <p class="card__desc">
+                Designed with instinct, to bring joy back to the everyday.
+                Through the Glyph Interface, a perfected OS and exceptional dual
+                camera. All startlingly fast.
+              </p>
+              <p class="card__price">$ 499.00</p>
+            </div>
+            <div class="card">
+              <img
+                class="card__img"
+                src="./assets/images/recomended-2.png"
+                alt="ear boxes"
+              />
+              <h3 class="card__title">Ear (2)</h3>
+              <p class="card__desc">
+                Perfecting the path from artist to ear. So that music sounds
+                just as it was intended.
+              </p>
+              <p class="card__price">$ 149.00</p>
+            </div>
+            <div class="card">
+              <img
+                class="card__img"
+                src="./assets/images/recommended-3.png"
+                alt="ear"
+              />
+              <h3 class="card__title">Ear (stick)</h3>
+              <p class="card__desc">
+                Tech you can't feel. Leaving just space for sound to come to
+                life. Powered by custom sound technology.
+              </p>
+              <p class="card__price">$ 119.00</p>
+            </div>
           </div>
         </div>
       </section>
 
-       <section class="category">
+      <section class="category">
         <div class="container">
           <div class="category__content">
             <h2 class="category__title">Browse Nothing products by category</h2>
@@ -167,7 +226,7 @@
         </div>
       </section>
 
-       <section class="about">
+      <section class="about">
         <div class="container">
           <div class="about__content">
             <h2 class="about__title">About us</h2>
