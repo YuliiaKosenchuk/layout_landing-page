@@ -22,3 +22,12 @@
   font-size: 16px;
   line-height: 1.4;
 }
+
+@mixin hover-zoom-img($scale: 1.03) {
+  transition: transform 0.6s ease;
+
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
