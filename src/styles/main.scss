@@ -4,7 +4,9 @@
 @use 'layout/aside';
 @use 'section/top-bar';
 @use 'section/recommended';
+@use 'section/category';
 @use 'components/icon';
+@use 'components/container';
 
 
 body {

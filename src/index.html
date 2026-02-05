@@ -68,39 +68,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__content">
-          <div class="top-bar">
+      <div class="header__content">
+        <div class="top-bar">
+          <a
+            href="#"
+            class="top-bar__logo-link"
+          >
+            <img
+              src="../src/assets/icons/logo.svg"
+              alt="logo nothing"
+              class="top-bar__logo-image"
+            />
+          </a>
+
+          <div class="top-bar__icons">
             <a
               href="#"
-              class="top-bar__logo-link"
+              class="icon icon--phone"
+            ></a>
+            <button
+              type="button"
+              id="burger"
+              class="icon icon--menu"
             >
-              <img
-                src="../src/assets/icons/logo.svg"
-                alt="logo nothing"
-                class="top-bar__logo-image"
-              />
-            </a>
-
-            <div class="top-bar__icons">
-              <a
-                href="#"
-                class="icon icon--phone"
-              ></a>
-              <button
-                type="button"
-                id="burger"
-                class="icon icon--menu"
-              >
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-              </button>
-            </div>
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </button>
           </div>
-          <div class="header__bottom">
-            <h1 class="header__title">Bring joy back to the everyday</h1>
-          </div>
+        </div>
+        <div class="header__bottom">
+          <h1 class="header__title">Bring joy back to the everyday</h1>
         </div>
       </div>
     </header>
@@ -173,59 +171,187 @@
       <section class="recommended">
         <div class="container">
           <h2 class="recommended__title">Recommended</h2>
-          <div class="recommended__content">
-            <div class="card">
-              <img
-                class="card__img"
-                src="./assets/images/recommended-1.png"
-                alt="phone"
-              />
-              <h3 class="card__title">Phone (1)</h3>
-              <p class="card__desc">
-                Designed with instinct, to bring joy back to the everyday.
-                Through the Glyph Interface, a perfected OS and exceptional dual
-                camera. All startlingly fast.
-              </p>
-              <p class="card__price">$ 499.00</p>
-            </div>
-            <div class="card">
-              <img
-                class="card__img"
-                src="./assets/images/recomended-2.png"
-                alt="ear boxes"
-              />
-              <h3 class="card__title">Ear (2)</h3>
-              <p class="card__desc">
-                Perfecting the path from artist to ear. So that music sounds
-                just as it was intended.
-              </p>
-              <p class="card__price">$ 149.00</p>
-            </div>
-            <div class="card">
-              <img
-                class="card__img"
-                src="./assets/images/recommended-3.png"
-                alt="ear"
-              />
-              <h3 class="card__title">Ear (stick)</h3>
-              <p class="card__desc">
-                Tech you can't feel. Leaving just space for sound to come to
-                life. Powered by custom sound technology.
-              </p>
-              <p class="card__price">$ 119.00</p>
-            </div>
+
+          <div class="recommended__grid">
+            <article class="card">
+              <a
+                href="#"
+                class="card__link"
+              >
+                <div class="card__img-wrapper">
+                  <img
+                    class="card__img"
+                    src="./assets/images/recommended-1.png"
+                    alt="Nothing Phone (1) white version"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Phone (1)</h3>
+                  <p class="card__desc">
+                    Designed with instinct, to bring joy back to the everyday.
+                    Through the Glyph Interface, a perfected OS and exceptional
+                    dual camera. All startlingly fast.
+                  </p>
+                  <p class="card__price">$ 499.00</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="card">
+              <a
+                href="#"
+                class="card__link"
+              >
+                <div class="card__img-wrapper">
+                  <img
+                    class="card__img"
+                    src="./assets/images/recomended-2.png"
+                    alt="Nothing Ear (2) wireless earbuds"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Ear (2)</h3>
+                  <p class="card__desc">
+                    Perfecting the path from artist to ear. So that music sounds
+                    just as it was intended.
+                  </p>
+                  <p class="card__price">$ 149.00</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="card">
+              <a
+                href="#"
+                class="card__link"
+              >
+                <div class="card__img-wrapper">
+                  <img
+                    class="card__img"
+                    src="./assets/images/recommended-3.png"
+                    alt="Nothing Ear (stick) lightweight earbuds"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Ear (stick)</h3>
+                  <p class="card__desc">
+                    Tech you can't feel. Leaving just space for sound to come to
+                    life. Powered by custom sound technology.
+                  </p>
+                  <p class="card__price">$ 119.00</p>
+                </div>
+              </a>
+            </article>
           </div>
         </div>
       </section>
-
       <section class="category">
         <div class="container">
           <div class="category__content">
             <h2 class="category__title">Browse Nothing products by category</h2>
+
+            <div class="category__grid">
+              <article class="category__card">
+                <a
+                  href="#"
+                  class="category__card-link"
+                >
+                  <div class="category__card-image">
+                    <img
+                      src="./assets/images/category-1.png"
+                      alt="All Nothing products"
+                    />
+                  </div>
+                  <h3 class="category__card-title">All products</h3>
+                </a>
+              </article>
+
+              <article class="category__card">
+                <a
+                  href="#"
+                  class="category__card-link"
+                >
+                  <div class="category__card-image">
+                    <img
+                      src="./assets/images/category-2.png"
+                      alt="Earbuds case"
+                    />
+                  </div>
+                  <h3 class="category__card-title category__card-title--hidden">
+                    Earbuds
+                  </h3>
+                </a>
+              </article>
+
+              <article class="category__card">
+                <a
+                  href="#"
+                  class="category__card-link"
+                >
+                  <div class="category__card-image">
+                    <img
+                      src="./assets/images/category-3.png"
+                      alt="Audio devices"
+                    />
+                  </div>
+                  <h3 class="category__card-title">Audio</h3>
+                </a>
+              </article>
+
+              <article class="category__card">
+                <a
+                  href="#"
+                  class="category__card-link"
+                >
+                  <div class="category__card-image">
+                    <img
+                      src="./assets/images/category-4.png"
+                      alt="New Audio line"
+                    />
+                  </div>
+                  <h3 class="category__card-title category__card-title--hidden">
+                    New Arrival
+                  </h3>
+                </a>
+              </article>
+
+              <article class="category__card">
+                <a
+                  href="#"
+                  class="category__card-link"
+                >
+                  <div class="category__card-image">
+                    <img
+                      src="./assets/images/category-5.png"
+                      alt="Phone accessories"
+                    />
+                  </div>
+                  <h3 class="category__card-title">Accessories</h3>
+                </a>
+              </article>
+
+              <article class="category__card">
+                <a
+                  href="#"
+                  class="category__card-link"
+                >
+                  <div class="category__card-image">
+                    <img
+                      src="./assets/images/category-6.png"
+                      alt="Fast charger"
+                    />
+                  </div>
+                  <h3 class="category__card-title category__card-title--hidden">
+                    Chargers
+                  </h3>
+                </a>
+              </article>
+            </div>
+
+            <button class="category__btn" type="button">View all</button>
           </div>
         </div>
       </section>
-
       <section class="about">
         <div class="container">
           <div class="about__content">
