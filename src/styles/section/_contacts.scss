@@ -1,0 +1,86 @@
+@use '../base/mixins' as *;
+@use '../base/variables' as *;
+
+.contacts {
+  &__title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    text-align: left;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    // @media (min-width: 1024px) {
+    //   display: grid;
+    //   grid-template-columns: 1.2fr 0.8fr;
+    //   gap: 80px;
+    //   align-items: start;
+    // }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    // @media (min-width: 1024px) {
+    //   gap: 16px;
+    // }
+  }
+
+  &__input,
+  &__textarea {
+    @include regular-text;
+    @include input-base;
+  }
+
+  &__textarea {
+    min-height: 150px;
+    resize: vertical;
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    @include btn-base;
+  }
+
+  &__info {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 64px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__label {
+   @include regular-text;
+
+    color: $color-secondary;
+  }
+
+  &__link,
+  &__text {
+    @include regular-text;
+
+    color: $color-primary;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+
+  &__link:hover {
+    opacity: 0.7;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
