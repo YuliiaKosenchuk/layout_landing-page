@@ -2,13 +2,14 @@
 @use 'base/variables' as *;
 @use 'layout/header';
 @use 'layout/aside';
+@use 'layout/main-grid-layout';
 @use 'section/top-bar';
 @use 'section/recommended';
 @use 'section/category';
 @use 'section/about';
 @use 'section/contacts';
 @use 'components/icon';
-@use 'components/container';
+
 
 
 body {
@@ -17,4 +18,9 @@ body {
   font-weight: 700;
   line-height: 1;
   color: $color-primary;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100dvh;
 }

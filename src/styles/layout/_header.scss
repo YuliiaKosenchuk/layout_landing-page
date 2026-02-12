@@ -1,11 +1,21 @@
+@use '../base/mixins' as *;
+@use '../base/variables' as *;
+
 .header {
   width: 100vw;
   height: 100vh;
-  background-image: url('../assets/images/header-image.png');
+  background-image: url('../assets/images/header-image-750.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  @include respond-to(tablet) {
+    background-image: url('../assets/images/header-image-1024.webp');
+  }
+
+  @include respond-to(desktop) {
+    background-image: url('../assets/images/header-image.webp');
+  }
 
   &__content {
     display: flex;
@@ -14,8 +24,19 @@
   }
 
   &__bottom {
-    margin: auto 20px 40px;
+    margin: auto $margin-mobile 40px;
     font-size: 18px;
+
+    @include respond-to(tablet) {
+      margin: auto $margin-tablet 65px;
+      text-align: left;
+      font-size: 38px;
+    }
+
+    @include respond-to(desktop) {
+      margin: auto $margin-desktop 92px;
+      text-align: left;
+      font-size: 48px;
+    }
   }
 }
-

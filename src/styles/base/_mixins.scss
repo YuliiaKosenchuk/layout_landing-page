@@ -1,22 +1,48 @@
-// @mixin respond($breakpoint) {
-//   @if $breakpoint == mobile {
-//     @media (max-width: 767px) { @content; }
-//   } @else if $breakpoint == tablet {
-//     @media (min-width: 768px) and (max-width: 1023px) { @content; }
-//   } @else if $breakpoint == desktop {
-//     @media (min-width: 1024px) { @content; }
-//   }
-// }
-
-// .header {
-//   padding: 32px;
-
-//   @include respond(mobile) {
-//     padding: 16px;
-//   }
-// }
-
 @use '../base/variables' as *;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin link-underline {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@mixin section-title {
+  margin-bottom: 48px;
+  text-align: left;
+  font-size: 32px;
+
+  @include respond-to(tablet) {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+
+  @include respond-to(desktop) {
+    font-size: 48px;
+  }
+}
 
 @mixin regular-text {
   font-family: 'Space Mono', monospace;

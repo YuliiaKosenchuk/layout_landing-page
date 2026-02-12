@@ -1,8 +1,19 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 20px;
+  padding: 28px $margin-mobile;
+
+  @include respond-to(tablet) {
+    padding: 36px $margin-tablet;
+  }
+  
+  @include respond-to(desktop) {
+    padding: 36px $margin-desktop;
+  }
 
   &__logo-link {
     display: block;
@@ -13,10 +24,19 @@
     width: 125px;
     height: 16px;
     object-fit: contain;
+
+    @include respond-to(tablet) {
+      width: 172px;
+      height: 24px;
+    }
   }
 
   &__icons {
     display: flex;
     gap: 24px;
+
+    @include respond-to(tablet) {
+      gap: 32px;
+    }
   }
 }
