@@ -29,6 +29,7 @@
 
     @include respond-to(desktop) {
       flex: 1;
+      padding-bottom: 120px;
     }
   }
 
@@ -55,6 +56,10 @@
     gap: 24px;
     padding-bottom: 64px;
 
+    @include respond-to(tablet) {
+      padding-bottom: 120px;
+    }
+
     @include respond-to(desktop) {
       flex: 1;
     }
@@ -67,7 +72,7 @@
   }
 
   &__label {
-   @include regular-text;
+    @include regular-text;
 
     color: $color-secondary;
   }

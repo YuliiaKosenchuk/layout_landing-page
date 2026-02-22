@@ -10,7 +10,7 @@
   @include respond-to(tablet) {
     padding: 36px $margin-tablet;
   }
-  
+
   @include respond-to(desktop) {
     padding: 36px $margin-desktop;
   }
