@@ -3,7 +3,7 @@
 
 .contacts {
   grid-column: content-start / content-end;
-  
+
   &__title {
     @include section-title;
   }
@@ -12,12 +12,24 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @include respond-to(tablet) {
+      gap: 80px;
+    }
+
+    @include respond-to(desktop) {
+      flex-direction: row;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @include respond-to(desktop) {
+      flex: 1;
+    }
   }
 
   &__input,
@@ -42,6 +54,10 @@
     flex-direction: column;
     gap: 24px;
     padding-bottom: 64px;
+
+    @include respond-to(desktop) {
+      flex: 1;
+    }
   }
 
   &__item {

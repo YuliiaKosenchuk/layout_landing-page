@@ -14,19 +14,19 @@
   @include respond-to(tablet) {
     grid-template-columns:
       [full-start] $margin-tablet
-      [content-start] repeat(6, 80px)
+      [content-start] repeat(6, 1fr)
       [content-end] $margin-tablet
       [full-end];
-    gap: 0 $gutter-tablet;
-    justify-content: center;
+    max-width: 100%;
+    gap: 120px $gutter-tablet;
   }
 
   @include respond-to(desktop) {
     grid-template-columns:
       [full-start] minmax($margin-desktop, 1fr)
-      [content-start] repeat(12, 63px)
+      [content-start] repeat(12, 1fr)
       [content-end] minmax($margin-desktop, 1fr)
       [full-end];
-    gap: 0 $gutter-desktop;
+    gap: 128px $gutter-desktop;
   }
 }
