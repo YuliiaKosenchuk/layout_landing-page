@@ -29,7 +29,21 @@
   }
 
   &__container {
-    display: contents;
+    grid-column: content-start / content-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 $gutter-mobile;
+
+    @include respond-to(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 $gutter-tablet;
+    }
+
+    @include respond-to(desktop) {
+      gap: 80px;
+      padding: 0 $gutter-desktop;
+    }
   }
 
   &__title {
@@ -37,31 +51,19 @@
 
     margin: 0;
     text-align: left;
-    grid-column: content-start / span 2;
     padding-top: 48px;
     padding-bottom: 24px;
 
     @include respond-to(tablet) {
-      grid-column: content-start / span 3;
       padding-top: 56px;
-    }
-
-    @include respond-to(desktop) {
-      grid-column: content-start / span 6;
+      flex: 1;
     }
   }
 
   &__desc {
-    grid-column: content-start / span 2;
-    padding-bottom: 48px;
-
     @include respond-to(tablet) {
-      grid-column: span 3 / content-end;
+      flex: 1;
       padding-top: 56px;
-    }
-
-    @include respond-to(desktop) {
-      grid-column: span 6 / content-end;
     }
   }
 

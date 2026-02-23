@@ -19,6 +19,8 @@
 
     @include respond-to(desktop) {
       flex-direction: row;
+      gap: 80px;
+      justify-content: space-between;
     }
   }
 
