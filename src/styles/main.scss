@@ -10,6 +10,10 @@
 @use 'section/contacts';
 @use 'components/icon';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;

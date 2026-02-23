@@ -128,25 +128,25 @@
 
       <nav class="menu__nav">
         <a
-          href="#"
+          href="#products"
           class="menu__link menu__link--active"
         >
           Products
         </a>
         <a
-          href="#"
+          href="#store"
           class="menu__link"
         >
           Store
         </a>
         <a
-          href="#"
+          href="#contacts"
           class="menu__link"
         >
           Login
         </a>
         <a
-          href="#"
+          href="#contacts"
           class="menu__link"
         >
           Cart(0)
@@ -170,7 +170,7 @@
     </aside>
 
     <main class="main">
-      <section class="recommended">
+      <section id="products" class="recommended">
         <h2 class="recommended__title">Recommended</h2>
 
         <div class="recommended__grid">
@@ -246,7 +246,7 @@
         </div>
       </section>
 
-      <section class="category">
+      <section id="store" class="category">
         <div class="category__content">
           <h2 class="category__title">Browse Nothing products by category</h2>
 
@@ -397,7 +397,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <h2 class="contacts__title">Contact us</h2>
 
         <div class="contacts__wrapper">
@@ -414,6 +414,7 @@
               autocomplete="name"
               placeholder="Name"
               class="contacts__input"
+              required
             />
             <input
               type="email"
@@ -421,12 +422,14 @@
               autocomplete="email"
               placeholder="Email"
               class="contacts__input"
+              required
             />
             <textarea
               placeholder="Message"
               name="message"
               autocomplete="off"
               class="contacts__textarea"
+              required
             ></textarea>
             <button
               type="submit"
