@@ -1,0 +1,2 @@
+var e=document.querySelector(".icon--menu"),c=document.querySelector(".menu"),n=document.querySelector(".icon--close"),o=document.body;e.addEventListener("click",function(){c.classList.add("active"),o.classList.add("no-scroll")}),n.addEventListener("click",function(){c.classList.remove("active"),o.classList.remove("no-scroll")}),document.querySelectorAll(".menu__link").forEach(function(e){e.addEventListener("click",function(){c.classList.remove("active"),o.classList.remove("no-scroll")})});
+//# sourceMappingURL=index.068adecf.js.map
